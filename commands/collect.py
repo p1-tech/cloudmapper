@@ -322,7 +322,7 @@ def collect(arguments):
                 if region["RegionName"] != default_region:
                     continue
             elif region["RegionName"] not in session.get_available_regions(
-                runner["Service"]
+                runner["Service"], partition_name='aws-us-gov' if 'gov-' in os.getenv('AWS_DEFAULT_REGION') else 'aws'
             ):
                 print(
                     "  Skipping region {}, as {} does not exist there".format(
