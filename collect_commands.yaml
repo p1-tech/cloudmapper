@@ -60,8 +60,8 @@
 - Service: s3control
   Request: get-public-access-block
   Parameters:
-  - Name: AccountId
-    Value: sts-get-caller-identity.json|.Account
+  - Name: Bucket
+    Value: s3-list-buckets.json|.Buckets[]?|.Name
 - Service: s3
   Request: list-buckets
 - Service: s3
