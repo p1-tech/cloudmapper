@@ -61,7 +61,7 @@
   Request: get-public-access-block
   Parameters:
   - Name: AccountId
-    Value: sts-get-caller-identiy.json|.Account
+    Value: sts-get-caller-identity.json|.Account
 - Service: s3
   Request: list-buckets
 - Service: s3
