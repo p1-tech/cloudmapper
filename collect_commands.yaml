@@ -94,6 +94,16 @@
   Parameters:
   - Name: Bucket
     Value: s3-list-buckets.json|.Buckets[]?|.Name
+- Service: s3
+  Request: get-bucket-versioning
+  Parameters:
+  - Name: Bucket
+    Value: s3-list-buckets.json|.Buckets[]?|.Name
+- Service: s3
+  Request: get-bucket-lifecycle
+  Parameters:
+  - Name: Bucket
+    Value: s3-list-buckets.json|.Buckets[]?|.Name
 - Service: route53
   Request: list-hosted-zones
 - Service: route53
