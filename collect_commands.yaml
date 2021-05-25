@@ -32,9 +32,9 @@
 - Service: iam
   Request: get-account-summary
 - Service: iam
-  Request: list-account-aliases
-- Service: iam
   Request: get-credential-report
+- Service: iam
+  Request: list-account-aliases
 - Service: iam
   Request: get-service-last-accessed-details
   Parameters:
