@@ -448,12 +448,10 @@ def weboftrust(args, accounts, config):
     connections = {}
     for account in accounts:
         # Check if the account data exists
-        if not path.exists(
-            "./account-data/{}/us-east-1/iam-get-account-authorization-details.json".format(
+        if not path.exists("./account-data/{}/us-east-1/iam-get-account-authorization-details.json".format(
                 account["name"]
             )
-        ) or not path.exists(
-            "./account-data/{}/us-gov-west-1/iam-get-account-authorization-details.json".format(
+        ) or not path.exists("./account-data/{}/us-gov-west-1/iam-get-account-authorization-details.json".format(
                 account["name"]
             )
         ):
